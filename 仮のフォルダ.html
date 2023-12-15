@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        input{
+            margin-top: 10vh;
+        }
+    </style>
+    <input type="text">
+    <button id="button">ここをクリック!</button>
+    <button id="reset_button">リセットボタン</button>
+    <div id="divAll" width="50vw" height="50vh">こんにちはぁぁぁぁぁ</div>
+    <script>
+        var result = document.getElementById("input");
+        var div = document.getElementById("divAll");
+        var button = document.getElementById("button");
+        var reset = document.getElementById("reset_button");
+
+
+        button.addEventListener ('click',function() {
+            divAll.style.background = "lightseagreen";
+        })
+        reset.addEventListener ('click',function(){
+            divAll.style.background = "white";
+        })
+    </script>
+</body>
+</html>
